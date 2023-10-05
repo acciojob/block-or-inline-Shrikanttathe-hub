@@ -1,10 +1,22 @@
 
 /* Your CSS Code here. */
-/* Select the button element with data-ns-test attribute value "block-inline-button" */
-button[data-ns-test="block-inline-button"] {
-    display: inline; /* Apply the "Inline" styling */
+.divblock {
+    margin-bottom: 20px;
 }
 
-div[data-ns-test="block-inline-div"] {
+/* Apply block or inline display based on data-ns-test attribute value */
+[data-ns-test="block-inline-button"],
+[data-ns-test="block-inline-div"],
+[data-ns-test="block-inline-p"],
+[data-ns-test="block-inline-h1"] {
     display: block;
+}
+
+[data-ns-test="block-inline-span"],
+[data-ns-test="block-inline-input"],
+[data-ns-test="block-inline-cite"],
+[data-ns-test="block-inline-code"],
+[data-ns-test="block-inline-sup"],
+[data-ns-test="block-inline-sub"] {
+    display: inline;
 }
