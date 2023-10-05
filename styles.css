@@ -1,2 +1,10 @@
 
 /* Your CSS Code here. */
+/* Select the button element with data-ns-test attribute value "block-inline-button" */
+button[data-ns-test="block-inline-button"] {
+    display: inline; /* Apply the "Inline" styling */
+}
+
+div[data-ns-test="block-inline-div"] {
+    display: block;
+}
